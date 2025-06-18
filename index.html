@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Bookmark</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-center">
+            <h1>Bookmarker</h1>
+        </div>
+
+        <div class="main">
+            <div class="text-center">
+                <h2 class="">
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+            </div>
+
+            <div class="site-name ">
+                <label for="bookmarkName">
+                    <i class="fa-solid fa-book-bookmark pe-2"></i>
+                    Site Name</label>
+                <input type="text" placeholder="Bookmark Name" class="form-control" id="bookmarkName">
+            </div>
+            <div class="site-url">
+                <label for="bookmarkURL" class="pb-2 fw-semibold">
+                    <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+                <input type="url" placeholder="Website URL" class="form-control" id="bookmarkURL">
+            </div>
+            <div class=" button text-center" "><button class="btn btn-submit text-center px-5"
+                    id="submitBtn">Submit</button></div>
+        </div>
+        <table class="table mt-4 text-center">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+    </div>
+    <div
+        class="box-info real position-absolute start-0 top-0 h-100 w-100 d-flex justify-content-center align-items-center d-none">
+        <div class="box-conent bg-white p-4 rounded-2 shadow-lg">
+            <header class="box-header w-100 d-flex justify-content-between align-items-center mb-4">
+                <div class="circles d-flex">
+                    <span class="rounded-circle me-2"><i class="fa-solid fa-circle" style="color: #f15f5d;"></i></span>
+                    <span class="rounded-circle me-2"><i class="fa-solid fa-circle" style="color: #febe2e;"></i></span>
+                    <span class="rounded-circle me-2"><i class="fa-solid fa-circle" style="color: #4db748;"></i></span>
+                </div>
+                <button class="btn border-0" id="closeBtn">
+                    <i class="fa-solid fa-xmark close fs-3"></i>
+                </button>
+            </header>
+            <p class="pb-2">
+                Site Name or Url is not valid, Please follow the rules below :
+            </p>
+            <ol class=" list-unstyled m-0">
+                <li>
+                    <i class="fa-regular fa-circle-right p-2" style="color:#bb4120 ;"></i>Site name must
+                    contain at least 3 characters
+                </li>
+                <li>
+                    <i class="fa-regular fa-circle-right p-2" style="color: #bb4120;"></i>Site URL must be a
+                    valid one
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
